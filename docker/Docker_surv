@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-LABEL maintainer="wzhou@broadinstitute.org"
+#LABEL maintainer="wzhou@broadinstitute.org"
 
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
@@ -43,7 +43,7 @@ RUN apt-get install -y git
 
 RUN echo "hello world8"
 ENV SRC_BRANCH main
-ENV REPO_SRC_URL https://github.com/weizhou0/GATE
+ENV REPO_SRC_URL https://github.com/YADengUU/GATE
 
 
 ADD install_packages_2.R /usr/local/bin/
