@@ -1661,6 +1661,13 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     S2 = -S_a2 %*% Z
   }else{
     Z = A1 * g1
+    print("The dimensions of Z, A1, and g1 are")
+    print(dim(Z))
+    print(dim(A1))
+    print(dim(g1))
+
+    print("And the dimension of X1_fg is")
+    print(dim(X1_fg))
     B<-X1_fg %*% Z
     g_tilde1 = g1 - B
     var2 = t(Z) %*% obj.null$XVX_fg %*% Z - t(B^2) %*% mu21 + t(g_tilde1^2) %*% mu21
