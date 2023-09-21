@@ -1639,10 +1639,21 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
   y1<-obj.null$y[idx_no0]
 
   if(length(idx_no0) > 1){
+    print("idx_no0 is")
+    print(idx_no0)
 #    cat("idx_no0 ", idx_no0, "\n")
     #cat("dim(X1) ", dim(X1), "\n")
     #cat("dim(A1) ", dim(A1), "\n")
+    
     Z = t(A1) %*% g1
+    print("The dimensions of Z, A1, and g1 are")
+    print(dim(Z))
+    print(dim(A1))
+    print(dim(g1))
+
+    print("And the dimension of X1_fg is")
+    print(dim(X1_fg))
+    
     B<-X1_fg %*% Z
     #cat("dim(Z) ", dim(Z), "\n")
     #cat("dim(B) ", dim(B), "\n")
@@ -1660,6 +1671,11 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
 
     S2 = -S_a2 %*% Z
   }else{
+    print("idx_no0 is")
+    print(idx_no0)
+    print("length(idx_no0) is")
+    print(length(idx_no0))
+
     Z = A1 * g1
     print("The dimensions of Z, A1, and g1 are")
     print(dim(Z))
