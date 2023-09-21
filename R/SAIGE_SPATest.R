@@ -1653,7 +1653,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
 
     print("And the dimension of X1_fg is")
     print(dim(X1_fg))
-    
+
     B<-X1_fg %*% Z
     #cat("dim(Z) ", dim(Z), "\n")
     #cat("dim(B) ", dim(B), "\n")
@@ -1676,7 +1676,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     print("length(idx_no0) is")
     print(length(idx_no0))
 
-    Z = A1 * g1
+    Z = t(A1) * g1 # add transpose
     print("The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
