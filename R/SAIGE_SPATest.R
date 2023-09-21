@@ -1639,8 +1639,8 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
   y1<-obj.null$y[idx_no0]
 
   if(length(idx_no0) > 1){
-    print("idx_no0 is")
-    print(idx_no0)
+    print("length of idx_no0 is")
+    print(length(idx_no0))
 #    cat("idx_no0 ", idx_no0, "\n")
     #cat("dim(X1) ", dim(X1), "\n")
     #cat("dim(A1) ", dim(A1), "\n")
@@ -1671,9 +1671,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
 
     S2 = -S_a2 %*% Z
   }else{
-    print("idx_no0 is")
-    print(idx_no0)
-    print("length(idx_no0) is")
+    print("length of idx_no0 is")
     print(length(idx_no0))
 
     Z = t(A1) %*% g1 # add transpose
