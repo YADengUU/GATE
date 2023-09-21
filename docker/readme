@@ -1,2 +1,2 @@
-docker buildx build --platform linux/amd64 -t yaden22/saige.survival:0.45 -f ./Docker_surv .
-docker push yaden22/saige.survival:0.45
+docker buildx build --platform linux/amd64 -t yaden22/saige.survival.test -f ./Docker_surv .
+docker push yaden22/saige.survival.test
