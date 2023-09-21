@@ -1676,7 +1676,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     print("length(idx_no0) is")
     print(length(idx_no0))
 
-    Z = t(A1) * g1 # add transpose
+    Z = t(A1) %*% g1 # add transpose
     print("The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
