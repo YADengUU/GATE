@@ -1646,7 +1646,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     #cat("dim(A1) ", dim(A1), "\n")
     
     Z = t(A1) %*% g1
-    print("The dimensions of Z, A1, and g1 are")
+    print("If. The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
     print(dim(g1))
@@ -1675,7 +1675,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     print(length(idx_no0))
 
     Z = t(A1) %*% g1 # add transpose
-    print("The dimensions of Z, A1, and g1 are")
+    print("Else. The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
     print(dim(g1))
