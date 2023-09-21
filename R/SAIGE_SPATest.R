@@ -1649,6 +1649,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     print("If. The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
+    print(dim(t(A1)))
     print(dim(g1))
 
     print("And the dimension of X1_fg is")
@@ -1678,6 +1679,7 @@ Score_Test_Sparse_Survival<-function(obj.null, G, mu, mu2, varRatio){
     print("Else. The dimensions of Z, A1, and g1 are")
     print(dim(Z))
     print(dim(A1))
+    print(dim(t(A1)))
     print(dim(g1))
 
     print("And the dimension of X1_fg is")
